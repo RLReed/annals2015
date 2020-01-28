@@ -1,0 +1,130 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{Response to Reviews - ANUCENE-D-14-00630}
+\author{R. Reed}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Responses to Reviewer 1}
+
+\begin{enumerate}
+    \item General Comments
+    \begin{enumerate}
+        \item The references have been updated to be consistent.
+        
+        \item The introduction and conclusions have been expanded to show how 
+        application of the KLT will fit into the use of ERMM. 
+    \end{enumerate}
+    
+    \item Abstract
+    \begin{enumerate}
+        \item The abstract has been expanded to define snapshots.  Additionally 
+        the abstract was edited for clarity, and to better introduce the KLT 
+        method as applied to current methods.
+    \end{enumerate}
+    
+    \item Keywords
+    \begin{enumerate}
+        \item Replaced Transform with Karhunen-Lo\'{e}ve Transform
+    \end{enumerate}
+    
+    \item Introduction
+    \begin{enumerate}
+        \item Additional background was added to the introduction to identify a 
+        drawback of current applications of ERMM and how the proposed method 
+        can provide a solution.
+    \end{enumerate}
+    
+    \item Section 2
+    \begin{enumerate}
+        \item  The summation terms have been corrected
+        \item  Further citations have been added to the history of ERMM in 
+        section 1
+    \end{enumerate}
+    
+    \item Section 3
+    \begin{enumerate}
+        \item Reworded the sentence to reference the work by Rahnema, Forget et 
+        al.  
+        \item Included the additional references to the work of Zhu
+    \end{enumerate}
+    
+    \item Section 4
+    \begin{enumerate}
+        \item The statement about finer refinement in angles or space was added 
+        after describing the two test problem.
+        \item The spatial mesh scheme was already stated in the article in 
+        section 4 as ``step-characteristics spatial discretization were used 
+        for all calculations in both problems.''
+        \item The material enrichment was added to the test problem description 
+        for the 10-pin problem.
+        \item Reworded the sentence to correct for the tenses.
+        \item The correction for boiling water reactor was made.
+        \item The reference to the work of Nichita et al. was included.  Our 
+        test problem is not the same as that in their work, but our was adapted 
+        from the work of Nichita.
+        \item The choice of using SC in our work was arbitrary, but in previous 
+        efforts, DD was used.  ERMM is insensitive to the underlying spatial 
+        discretization.
+    \end{enumerate}
+    
+    \item Section 5
+    \begin{enumerate}
+        \item No, a zeroth order expansion does not correspond to a coarse 
+        group flux weighted energy condensation.  ERMM is nonlinear, so there is 
+        no way to preserve fine-group reaction rates.  Although this is an 
+        interesting theoretical point, a discussion of energy condensation 
+        methods (i.e., the processes by which fine-group data is turned into 
+        few-group data) is outside our scope of the present work.
+        
+        \item We have previously considered energy segmentation, but not the 
+SPH factors.  Neither of these methods are discussed in the paper.
+
+        \item The comparison of the spectrum from the 44-group and 238-group 
+data was missing from the paper and has been appropriately treated.  The 
+ 44-group pin powers have an maximum error relative to the 238-group pin powers 
+of over 0.5\%.  Since the accuracy goal is sub 0.1\% relative error, the 
+238-group results provide significant improvement compared to the 44-group 
+results.  This comparison was performed for the 10-pin problem as described in 
+the present work.
+
+        \item The wording for ``described methods described'' has been corrected
+        
+        \item ``Preformed'' was corrected
+    \end{enumerate}
+    
+    \item Conclusion
+    \begin{enumerate}
+        \item The conclusion was extended similarly to the introduction and 
+abstract to yield a better demonstration as to how our method of KLT is 
+applicable to the broader use of ERMM and other similar methods.
+    \end{enumerate}
+\end{enumerate}
+
+\section*{Additional Changes to the Article}
+
+\begin{enumerate}
+    \item Several grammar corrections were made throughout the paper.  Many of 
+these include adding in missing articles.
+    \item notation and wording has been standardize throughout the paper.
+    \item Section 3.4.1 has been extended to show how the KLT basis functions 
+are derived completely.
+    \item Switched ``realistic'' to ``practical'' with regards to certain 
+snapshot models.
+    \item Clarified the wording in section 5.  The basis sets were better 
+described as being formed from snapshots of the scalar flux and the leftward 
+partial current.
+    \item Removed figures of the BWR test problem results of including 
+snapshots of the higher order angular moments.  The result is the same as for 
+the 10-pin test problem, and the figures did not add meaningfully to the 
+discussion.
+    \item Added a section for acknowledgements
+\end{enumerate}
+
+
+\end{document}
